@@ -26,6 +26,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Debug: list workspace
+        run: |
+          echo "GITHUB_WORKSPACE=${GITHUB_WORKSPACE}"
+          ls -la "${GITHUB_WORKSPACE}"
+          echo "--- actions prefix ---"
+          echo "ACTIONS_RUN_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
