@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-canvas-width="750" data-canvas-height="3560" data-canvas-protocol="fixed-canvas" data-canvas-version="1" style="width:750px;height:3560px;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>才彦鹏 · 彦鹏数智工程科技有限公司</title>
+<meta name="description" content="数智精算工程，影像驱动未来 · 工程造价 / 数字影像 / 设计 / 软件智能体">
+<meta property="og:title" content="才彦鹏 · 彦鹏数智工程科技有限公司">
+<meta property="og:description" content="数智精算工程，影像驱动未来 · 工程造价 / 数字影像 / 设计 / 软件智能体">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://caiyanpengbj.github.io/yanpeng-card/">
+<meta property="og:image" content="https://aka.doubaocdn.com/s/The6AYVWX2">
+<style>
+  @font-face {
+    font-family: 'Source Han Sans SC VF';
+    src: url('https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/infinite-canvas/fonts/v1/source-han-sans-sc-vf/source-han-sans-sc-vf.otf') format('opentype');
+    font-weight: 250 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/infinite-canvas/fonts/v1/montserrat/montserrat-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/infinite-canvas/fonts/v1/montserrat/montserrat-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/infinite-canvas/fonts/v1/montserrat/montserrat-semi-bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/infinite-canvas/fonts/v1/montserrat/montserrat-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 750px; height: 3560px; }
+  body {
+    font-family: 'Source Han Sans SC VF', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #0B1030;
+    color: #E8EDF6;
+    -webkit-font-smoothing: antialiased;
+  }
+  [data-canvas-root] {
+    width: 750px;
+    height: 3560px;
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(1200px 700px at 85% -10%, rgba(94, 62, 178, 0.34), transparent 60%),
+      radial-gradient(1100px 680px at 0% 30%, rgba(34, 184, 207, 0.18), transparent 55%),
+      linear-gradient(178deg, #0D1233 0%, #0B1030 48%, #0A0E28 100%);
+  }
+  .grid-layer {
+    position: absolute; inset: 0; z-index: 0; opacity: 0.06; pointer-events: none;
+    background-image: repeating-linear-gradient(0deg, #7FE3F2 0, #7FE3F2 1px, transparent 1px, transparent 48px),
+                      repeating-linear-gradient(90deg, #7FE3F2 0, #7FE3F2 1px, transparent 1px, transparent 48px);
+  }
+  .arc-layer { position: absolute; z-index: 0; pointer-events: none; }
+  .content { position: relative; z-index: 1; padding: 56px 48px 40px; }
+
+  /* ===== 首屏 ===== */
+  .hero { text-align: center; padding-top: 12px; }
+  .brand-logo { width: 132px; height: 132px; object-fit: contain; margin: 0 auto 26px; display: block; }
+  .company-en {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; letter-spacing: 3.2px; color: #8FA3C8; margin-bottom: 12px;
+  }
+  .company-name { font-size: 30px; font-weight: 700; letter-spacing: 1.5px; color: #F2F6FC; }
+  .avatar-wrap {
+    width: 176px; height: 176px; margin: 34px auto 22px; border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(140deg, #7C4DDB 0%, #3B82C4 52%, #22B8CF 100%);
+    box-shadow: 0 18px 44px rgba(56, 132, 220, 0.28);
+  }
+  .avatar {
+    width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 22%;
+    background: #1A2148; display: block;
+  }
+  .person-name { font-size: 46px; font-weight: 900; letter-spacing: 4px; color: #FFFFFF; }
+  .person-title {
+    margin-top: 12px; font-size: 22px; font-weight: 500; color: #4FD6E8; letter-spacing: 2px;
+  }
+  .slogan {
+    margin-top: 26px; font-size: 21px; font-weight: 500; letter-spacing: 2.5px; color: #D8E2F2;
+  }
+  .slogan-sub { margin-top: 10px; font-size: 16px; color: #93A4C6; letter-spacing: 1px; }
+
+  .contact-row {
+    margin: 34px auto 0; max-width: 620px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(79, 214, 232, 0.22);
+    border-radius: 18px; padding: 20px 24px;
+  }
+  .tel-line { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .tel-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px; font-weight: 600; letter-spacing: 1.5px; color: #FFFFFF; text-decoration: none;
+  }
+  .copy-btn {
+    height: 44px; padding: 0 18px; border-radius: 12px; border: 1px solid rgba(79, 214, 232, 0.4);
+    background: rgba(79, 214, 232, 0.1); color: #4FD6E8; font-size: 16px; cursor: pointer;
+    font-family: inherit;
+  }
+  .copy-btn.copied { background: rgba(52, 211, 153, 0.16); color: #34D399; border-color: rgba(52, 211, 153, 0.4); }
+  .wechat-note { margin-top: 10px; font-size: 15px; color: #93A4C6; }
+  .email-line { margin-top: 14px; font-size: 16px; color: #B9C7DE; }
+  .email-line a { color: #B9C7DE; text-decoration: none; }
+  .scroll-hint { margin-top: 30px; font-size: 14px; color: #7E90B5; letter-spacing: 1px; }
+
+  /* ===== 章节通用 ===== */
+  .section { margin-top: 52px; }
+  .section-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 26px; }
+  .section-index { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 600; color: #4FD6E8; }
+  .section-title { font-size: 26px; font-weight: 700; letter-spacing: 1.5px; color: #F2F6FC; }
+  .section-line { flex: 1; height: 1px; background: linear-gradient(90deg, rgba(79,214,232,0.4), transparent); }
+
+  /* ===== 三入口卡片 ===== */
+  .entry-card {
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(124, 77, 219, 0.28);
+    border-radius: 22px; padding: 28px 28px 26px; margin-bottom: 26px;
+  }
+  .entry-top { display: flex; align-items: center; gap: 18px; }
+  .entry-qr-box {
+    width: 172px; height: 172px; border-radius: 16px; overflow: hidden; flex: 0 0 172px;
+    background: #FFFFFF; display: flex; align-items: center; justify-content: center;
+  }
+  .entry-qr-box img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-name { font-size: 24px; font-weight: 700; color: #FFFFFF; }
+  .entry-desc { margin-top: 10px; font-size: 15px; line-height: 1.6; color: #A9B8D6; }
+  .entry-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-top: 20px; height: 52px; border-radius: 14px; text-decoration: none;
+    background: linear-gradient(135deg, #6B46C1 0%, #2F80C9 100%);
+    color: #FFFFFF; font-size: 19px; font-weight: 600; letter-spacing: 1.5px;
+  }
+  .entry-btn.alt { background: linear-gradient(135deg, #2B6CB0 0%, #22B8CF 100%); }
+  .entry-url {
+    margin-top: 14px; font-family: 'Montserrat', sans-serif; font-size: 12.5px; line-height: 1.5;
+    color: #7E90B5; word-break: break-all;
+  }
+  .qr-tip { margin-top: 14px; font-size: 13px; color: #7E90B5; }
+
+  /* ===== 四大业务 ===== */
+  .biz-grid { display: flex; flex-direction: column; gap: 18px; }
+  .biz-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(34, 184, 207, 0.18);
+    border-left: 3px solid #22B8CF;
+    border-radius: 16px; padding: 22px 24px;
+  }
+  .biz-item:nth-child(2) { border-left-color: #6B46C1; }
+  .biz-item:nth-child(3) { border-left-color: #3B82C4; }
+  .biz-item:nth-child(4) { border-left-color: #4FD6E8; }
+  .biz-name { font-size: 21px; font-weight: 700; color: #F2F6FC; }
+  .biz-name .en { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 500; color: #8FA3C8; margin-left: 10px; letter-spacing: 1px; }
+  .biz-desc { margin-top: 8px; font-size: 15.5px; line-height: 1.6; color: #A9B8D6; }
+
+  /* ===== 联系与存通讯录 ===== */
+  .action-panel {
+    background: rgba(124, 77, 219, 0.1);
+    border: 1px solid rgba(124, 77, 219, 0.3);
+    border-radius: 22px; padding: 30px 28px;
+  }
+  .action-panel p { font-size: 16px; line-height: 1.7; color: #B9C7DE; }
+  .vcf-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; height: 58px; margin-top: 24px; border: none; border-radius: 16px; cursor: pointer;
+    background: linear-gradient(135deg, #22B8CF 0%, #3B82C4 100%);
+    color: #FFFFFF; font-size: 20px; font-weight: 700; letter-spacing: 2px; font-family: inherit;
+  }
+  .tel-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; height: 52px; margin-top: 16px; border-radius: 14px; text-decoration: none;
+    border: 1px solid rgba(79, 214, 232, 0.4); background: rgba(79, 214, 232, 0.08);
+    color: #4FD6E8; font-size: 18px; font-weight: 600; letter-spacing: 1.5px;
+  }
+
+  /* ===== 底部 ===== */
+  .footer { margin-top: 56px; text-align: center; padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .footer-logo { width: 72px; height: 72px; object-fit: contain; margin: 0 auto 16px; display: block; }
+  .footer-name { font-size: 18px; font-weight: 700; color: #E8EDF6; letter-spacing: 1px; }
+  .footer-slogan { margin-top: 10px; font-size: 15px; color: #8FA3C8; letter-spacing: 1.5px; }
+  .footer-scope { margin-top: 14px; font-size: 13px; color: #6E81A8; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<main data-canvas-root style="width:750px;height:3560px;">
+  <div class="grid-layer" aria-hidden="true"></div>
+  <svg class="arc-layer" aria-hidden="true" width="750" height="620" viewBox="0 0 750 620" fill="none">
+    <path d="M-60 560 C 180 380, 520 380, 810 120" stroke="rgba(79,214,232,0.16)" stroke-width="1.5"/>
+  </svg>
+
+  <div class="content">
+
+    <!-- 首屏 -->
+    <section class="hero">
+      <img class="brand-logo" src="https://aka.doubaocdn.com/s/The6AYVWX2" alt="彦鹏数智品牌 Logo">
+      <div class="company-en">YANPENG DIGITAL ENGINEERING TECHNOLOGY</div>
+      <div class="company-name">彦鹏数智工程科技有限公司</div>
+
+      <div class="avatar-wrap">
+        <img class="avatar" src="https://aka.doubaocdn.com/s/nQfX3epnmJ" alt="才彦鹏职业形象照">
+      </div>
+
+      <h1 class="person-name">才彦鹏</h1>
+      <div class="person-title">创始人 · 工程造价 / 数字影像</div>
+      <div class="slogan">数智精算工程，影像驱动未来</div>
+      <div class="slogan-sub">精算工程造价，智创精彩影像</div>
+
+      <div class="contact-row">
+        <div class="tel-line">
+          <a class="tel-link" href="tel:18612106682">186 1210 6682</a>
+          <button class="copy-btn" id="copyTel" type="button">复制</button>
+        </div>
+        <div class="wechat-note">电话 / 微信同号</div>
+        <div class="email-line">邮箱：<a href="mailto:caiyanpengbj@163.com">caiyanpengbj@163.com</a></div>
+      </div>
+
+      <div class="scroll-hint">下滑查看业务与入口 · 名片可转发</div>
+    </section>
+
+    <!-- 三入口 -->
+    <section class="section" id="entries">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <span class="section-title">官方入口</span>
+        <span class="section-line"></span>
+      </div>
+
+      <!-- 官网 -->
+      <div class="entry-card">
+        <div class="entry-top">
+          <div class="entry-qr-box">
+            <img src="https://aka.doubaocdn.com/s/f8Q0CyE0IF" alt="公司官网二维码">
+          </div>
+          <div class="entry-info">
+            <div class="entry-name">公司官网</div>
+            <div class="entry-desc">四大业务介绍、精选案例与新闻动态，一站查看完整公司实力。</div>
+          </div>
+        </div>
+        <a class="entry-btn" href="https://yanpeng-shuzhi-77953.app.workbuddy.host/?sharecode=JCF72C5H7S" target="_blank" rel="noopener noreferrer">访问官网</a>
+        <div class="entry-url">https://yanpeng-shuzhi-77953.app.workbuddy.host/?sharecode=JCF72C5H7S</div>
+        <div class="qr-tip">长按二维码可识别 · 保存图片可转发给微信好友</div>
+      </div>
+
+      <!-- WorkBuddy 版 H5 -->
+      <div class="entry-card">
+        <div class="entry-top">
+          <div class="entry-qr-box">
+            <img src="https://aka.doubaocdn.com/s/rBSqST8sn2" alt="WorkBuddy 版 H5 二维码">
+          </div>
+          <div class="entry-info">
+            <div class="entry-name">品牌 H5 · WorkBuddy 版</div>
+            <div class="entry-desc">工程设计、工程造价、数字影像、代码开发四条主线能力全景展示。</div>
+          </div>
+        </div>
+        <a class="entry-btn alt" href="https://yanpeng-shuzhi-h5.app.workbuddy.host/?sharecode=UE5OYZMNIC" target="_blank" rel="noopener noreferrer">打开 H5</a>
+        <div class="entry-url">https://yanpeng-shuzhi-h5.app.workbuddy.host/?sharecode=UE5OYZMNIC</div>
+        <div class="qr-tip">长按二维码可识别 · 保存图片可转发给微信好友</div>
+      </div>
+
+      <!-- 豆包版 H5 -->
+      <div class="entry-card">
+        <div class="entry-top">
+          <div class="entry-qr-box">
+            <img src="https://aka.doubaocdn.com/s/Le2XSRHIom" alt="豆包版 H5 二维码">
+          </div>
+          <div class="entry-info">
+            <div class="entry-name">品牌 H5 · 豆包版</div>
+            <div class="entry-desc">四步项目协作流程、造价服务对象与八条影像产品线完整呈现。</div>
+          </div>
+        </div>
+        <a class="entry-btn alt" href="https://4ktx3y33y89dn.doubao.link/app/app_17jfm978kwm" target="_blank" rel="noopener noreferrer">打开 H5</a>
+        <div class="entry-url">https://4ktx3y33y89dn.doubao.link/app/app_17jfm978kwm</div>
+        <div class="qr-tip">长按二维码可识别 · 保存图片可转发给微信好友</div>
+      </div>
+    </section>
+
+    <!-- 四大业务 -->
+    <section class="section" id="business">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <span class="section-title">四大业务</span>
+        <span class="section-line"></span>
+      </div>
+      <div class="biz-grid">
+        <div class="biz-item">
+          <div class="biz-name">工程造价<span class="en">Cost Engineering</span></div>
+          <div class="biz-desc">面向设计、建设、施工、咨询单位，投资估算到结算审核，全生命周期控本。</div>
+        </div>
+        <div class="biz-item">
+          <div class="biz-name">数字影像<span class="en">Digital Imagery</span></div>
+          <div class="biz-desc">短漫剧、AI 影视、营销视频、科普教学、创意 MV、工程动画，AI 工作流快交付可量产。</div>
+        </div>
+        <div class="biz-item">
+          <div class="biz-name">设计<span class="en">Architecture Design</span></div>
+          <div class="biz-desc">建筑、室内、景观、规划一体化设计支撑，让工程表达与品牌视觉同源。</div>
+        </div>
+        <div class="biz-item">
+          <div class="biz-name">软件智能体<span class="en">Code &amp; Agents</span></div>
+          <div class="biz-desc">网页、移动、小程序、智能体、工作流、技能六位一体，把业务经验沉淀为可复用工具。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系与存通讯录 -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <span class="section-title">联系合作</span>
+        <span class="section-line"></span>
+      </div>
+      <div class="action-panel">
+        <p>有项目、有想法，随时开聊。工程造价咨询或数字影像创作，一个电话，四大业务服务即刻启动。</p>
+        <button class="vcf-btn" id="saveVcf" type="button">保存到通讯录</button>
+        <a class="tel-btn" href="tel:18612106682">电话联系 · 186 1210 6682</a>
+      </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <img class="footer-logo" src="https://aka.doubaocdn.com/s/The6AYVWX2" alt="彦鹏数智品牌 Logo">
+      <div class="footer-name">彦鹏数智工程科技有限公司</div>
+      <div class="footer-slogan">数智精算工程，影像驱动未来</div>
+      <div class="footer-scope">面向全国 · 线上协作 + 项目驻地服务</div>
+    </footer>
+
+  </div>
+</main>
+
+<script>
+(function () {
+  // 复制电话
+  var copyBtn = document.getElementById('copyTel');
+  var telText = '18612106682';
+  copyBtn.addEventListener('click', function () {
+    function done() {
+      copyBtn.textContent = '已复制';
+      copyBtn.classList.add('copied');
+      setTimeout(function () {
+        copyBtn.textContent = '复制';
+        copyBtn.classList.remove('copied');
+      }, 1600);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(telText).then(done, function () { fallbackCopy(); });
+    } else {
+      fallbackCopy();
+    }
+    function fallbackCopy() {
+      var ta = document.createElement('textarea');
+      ta.value = telText;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+  });
+
+  // vCard 存通讯录
+  var vcfBtn = document.getElementById('saveVcf');
+  vcfBtn.addEventListener('click', function () {
+    var lines = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      'FN:才彦鹏',
+      'TITLE:创始人',
+      'ORG:彦鹏数智工程科技有限公司',
+      'TEL;TYPE=CELL:18612106682',
+      'EMAIL;TYPE=INTERNET:caiyanpengbj@163.com',
+      'URL:https://yanpeng-shuzhi-77953.app.workbuddy.host/?sharecode=JCF72C5H7S',
+      'NOTE:工程造价 / 数字影像 / 设计 / 软件智能体',
+      'END:VCARD'
+    ];
+    var blob = new Blob(['\uFEFF' + lines.join('\r\n')], { type: 'text/vcard;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = '才彦鹏-彦鹏数智.vcf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1200);
+  });
+
+  // 二维码长按兼容：阻止触摸冲突，保留长按识别菜单
+  var qrImages = document.querySelectorAll('.entry-qr-box img');
+  qrImages.forEach(function (img) {
+    img.addEventListener('touchstart', function (e) {
+      e.preventDefault();
+    }, { passive: false });
+  });
+})();
+</script>
+</body>
+</html>
